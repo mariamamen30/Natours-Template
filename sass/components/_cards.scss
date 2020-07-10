@@ -5,10 +5,7 @@
   height: 40rem;
   &__side {
     border-radius: 3px;
-
-    background-color: orangered;
     box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: 0.15);
-
     transition: all 0.8s;
     height: 40rem;
     position: absolute;
@@ -61,6 +58,8 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     &--1 {
       background-image: linear-gradient(
@@ -76,7 +75,7 @@
           $color-primary-light,
           $color-primary-dark
         ),
-        url(../img/nat-5.jpg);
+        url(../img/nat-6.jpg);
     }
     &--3 {
       background-image: linear-gradient(
@@ -84,7 +83,7 @@
           $color-tertiary-light,
           $color-tertiary-dark
         ),
-        url(../img/nat-5.jpg);
+        url(../img/nat-7.jpg);
     }
   }
   &__heading {
@@ -144,4 +143,28 @@
   }
 
   //   BACK SIDE
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 10rem 5rem;
+  }
+  &__price-box {
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 3rem;
+  }
 }

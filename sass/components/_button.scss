@@ -47,6 +47,16 @@
     }
   }
 
+  &--green {
+    color: $color-white;
+    background-color: $color-primary;
+    border-radius: 10rem;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &--animated {
     animation: moveInBottom 0.8s 1s backwards ease-out;
   }
