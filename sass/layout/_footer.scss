@@ -3,6 +3,10 @@
   padding: 13rem 0;
   font-size: 1.4rem;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 5rem;
@@ -17,6 +21,10 @@
     border-top: 1px solid #777;
     padding-top: 1rem;
     display: inline-block;
+    @include respond(tab-port) {
+      text-align: center;
+      width: 100%;
+    }
   }
 
   &__list {
@@ -51,5 +59,8 @@
   &__copyright {
     border-top: 1px solid #777;
     padding-top: 1rem;
+    @include respond(tab-port) {
+      text-align: center;
+    }
   }
 }
